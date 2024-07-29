@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/css/output.css" rel="stylesheet" />
+    <title>Today Times</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      class="bg-transparent fixed z-50 left-0 w-full flex items-center nav-bar"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="flex py-6"
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 89 89"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M45 7H4V25H30V71.5H48V25H85V43H65.5V82H48.5"
+                  stroke="#3b82f6"
+                  stroke-width="7"
+                />
+              </svg>
+              <span class="font-bold text-lg text-dark ml-4">Today Times</span>
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full top-full right-4 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section id="hero" class="pt-20">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h2 class="text-md font-bold text-gray">Headline</h2>
+            <h1 class="text-3xl font-medium mt-1 mb-5">
+              Respons PSSI Soal Opsi Pindah dari GBK jika Lolos Babak 3
+              Kualifikasi
+            </h1>
+            <p class="font-normal text-gray mb-3 leading-relaxed">
+              Ketua Badan Tim Nasional (BTN) PSSI Sumardji merespons peluang
+              Timnas Indonesia pindah dari Stadion Utama Gelora Bung Karno (GBK)
+              apabila lolos ke putaran ketiga Kualifikasi Piala Dunia 2026.
+            </p>
+            <div class="flex item-center mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="20"
+                height="20"
+                x="0"
+                y="0"
+                viewBox="0 0 32 32"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class=""
+              >
+                <g>
+                  <path
+                    d="M26.79 4.25h-3.52v-.5a1 1 0 0 0-2 0v.5H10.73v-.5a1 1 0 0 0-2 0v.5H5.21A4.22 4.22 0 0 0 1 8.46V26a4.22 4.22 0 0 0 4.21 4.21h21.58A4.22 4.22 0 0 0 31 26V8.46a4.22 4.22 0 0 0-4.21-4.21Zm-21.58 2h3.52v.5a1 1 0 0 0 2 0v-.5h10.54v.5a1 1 0 0 0 2 0v-.5h3.52A2.21 2.21 0 0 1 29 8.46v2.37H3V8.46a2.21 2.21 0 0 1 2.21-2.21Zm21.58 22H5.21A2.21 2.21 0 0 1 3 26V12.83h26V26a2.21 2.21 0 0 1-2.21 2.25Z"
+                    data-name="Layer 2"
+                    fill="#374151"
+                    opacity="1"
+                    data-original="#374151"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+              <time class="text-sm text-gray ml-2">22 Agustus 2024</time>
+            </div>
+            <div class="flex item-center">
+              <a href="#" class="text-sm font-medium text-primary mr-2"
+                >Baca selengkapnya</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="20"
+                height="20"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="m404.214 81.857-172.638.001h-.002c-6.924 0-13.434 2.696-18.33 7.593-4.897 4.897-7.594 11.408-7.594 18.333s2.696 13.435 7.594 18.333c4.897 4.896 11.408 7.592 18.332 7.593h110.048L89.452 385.88c-10.108 10.108-10.108 26.557.001 36.666 4.897 4.896 11.407 7.593 18.332 7.593s13.436-2.696 18.332-7.593l252.171-252.172-.001 110.048c0 6.926 2.697 13.437 7.595 18.332 4.896 4.897 11.406 7.595 18.333 7.595 14.295-.001 25.926-11.632 25.926-25.926V107.784c0-14.295-11.631-25.926-25.927-25.927z"
+                    fill="#3b82f6"
+                    opacity="1"
+                    data-original="#000000"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div
+              class="h-96 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
+            >
+              <img
+                src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ngdjbafv3twathukjbq2"
+                alt="News Thumbnail"
+                class="object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- Poluper news start -->
+    <section id="populer-news" class="pt-4">
+      <div class="container">
+        <div class="flex item-center px-4">
+          <span class="vertical-line"></span>
+          <h2 class="text-lg font-semibold text-dark ml-4 self-center">
+            Berita Terpopuler
+          </h2>
+        </div>
+        <div class="w-full flex flex-wrap mx-auto px-6 lg:px-8">
+          <article
+            class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"
+          >
+            <img
+              src="https://a.storyblok.com/f/112937/568x464/82f66c3a21/all_the_english-_football_terms_you_need_to_know_blog-hero-low.jpg/m/620x0/filters:quality(70)/"
+              alt="News Thumbnail"
+              class="h-24 w-32 object-cover object-center rounded-lg mr-2"
+            />
+            <div class="flex justify-between flex-col">
+              <div class="h-16">
+                <h2 class="line-clamp-2 text-sm leading-6 text-gray-600">
+                  Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
+                  Hamas?
+                </h2>
+              </div>
+
+              <div class="flex items-center gap-x-4 text-xs">
+                <a
+                  href="#"
+                  class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300"
+                  >Marketing</a
+                >
+                <time datetime="2020-03-16" class="text-gray-500"
+                  >16 Maret 2020</time
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"
+          >
+            <img
+              src="https://a.storyblok.com/f/112937/568x464/82f66c3a21/all_the_english-_football_terms_you_need_to_know_blog-hero-low.jpg/m/620x0/filters:quality(70)/"
+              alt="News Thumbnail"
+              class="h-24 w-32 object-cover object-center rounded-lg mr-2"
+            />
+            <div class="flex justify-between flex-col">
+              <div class="h-16">
+                <h2 class="line-clamp-2 text-sm leading-6 text-gray-600">
+                  Daftar 6 Lahan Tambang Jatah Ormas Agama, NU Dapat Bekas Grup
+                  Bakrie
+                </h2>
+              </div>
+
+              <div class="flex items-center gap-x-4 text-xs">
+                <a
+                  href="#"
+                  class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300"
+                  >Marketing</a
+                >
+                <time datetime="2020-03-16" class="text-gray-500"
+                  >16 Maret 2020</time
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"
+          >
+            <img
+              src="https://a.storyblok.com/f/112937/568x464/82f66c3a21/all_the_english-_football_terms_you_need_to_know_blog-hero-low.jpg/m/620x0/filters:quality(70)/"
+              alt="News Thumbnail"
+              class="h-24 w-32 object-cover object-center rounded-lg mr-2"
+            />
+            <div class="flex justify-between flex-col">
+              <div class="h-16">
+                <h2 class="line-clamp-2 text-sm leading-6 text-gray-600">
+                  Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
+                  Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
+                  Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
+                </h2>
+              </div>
+
+              <div class="flex items-center gap-x-4 text-xs">
+                <a
+                  href="#"
+                  class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300"
+                  >Marketing</a
+                >
+                <time datetime="2020-03-16" class="text-gray-500"
+                  >16 Maret 2020</time
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- More posts... -->
+        </div>
+      </div>
+    </section>
+    <!-- Poluper news end-->
+
+    <!--  news list start -->
+    <section id="news-list" class="pt-16">
+      <div class="container">
+        <div class="flex item-center px-4">
+          <span class="vertical-line"></span>
+          <h2 class="text-lg font-semibold text-dark ml-4 self-center">
+            Rekomendasi Untuk Anda
+          </h2>
+        </div>
+        <div class="w-full flex flex-wrap justify-between mx-auto">
+          <article
+            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
+          >
+            <img
+              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
+              alt="News Thumbnail"
+              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
+            />
+
+            <div class="h-24 my-2">
+              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
+                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
+                Hamas?
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-x-2 text-sm">
+              <a
+                href="#"
+                class="font-medium text-primary"
+                >Marketing</a
+              >
+              <h1>&#x2022;</h1>
+              <time datetime="2020-03-16" class="text-gray-500"
+                >16 Maret 2020</time
+              >
+            </div>
+          </article>
+          <article
+            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
+          >
+            <img
+              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
+              alt="News Thumbnail"
+              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
+            />
+
+            <div class="h-24 my-2">
+              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
+                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
+                Hamas?
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-x-2 text-sm">
+              <a
+                href="#"
+                class="font-medium text-primary"
+                >Marketing</a
+              >
+              <h1>&#x2022;</h1>
+              <time datetime="2020-03-16" class="text-gray-500"
+                >16 Maret 2020</time
+              >
+            </div>
+          </article>
+          <article
+            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
+          >
+            <img
+              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
+              alt="News Thumbnail"
+              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
+            />
+
+            <div class="h-24 my-2">
+              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
+                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
+                Hamas?
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-x-2 text-sm">
+              <a
+                href="#"
+                class="font-medium text-primary"
+                >Marketing</a
+              >
+              <h1>&#x2022;</h1>
+              <time datetime="2020-03-16" class="text-gray-500"
+                >16 Maret 2020</time
+              >
+            </div>
+          </article>
+          <article
+            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
+          >
+            <img
+              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
+              alt="News Thumbnail"
+              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
+            />
+
+            <div class="h-24 my-2">
+              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
+                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
+                Hamas?
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-x-2 text-sm">
+              <a
+                href="#"
+                class="font-medium text-primary"
+                >Marketing</a
+              >
+              <h1>&#x2022;</h1>
+              <time datetime="2020-03-16" class="text-gray-500"
+                >16 Maret 2020</time
+              >
+            </div>
+          </article>
+          <article
+            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
+          >
+            <img
+              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
+              alt="News Thumbnail"
+              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
+            />
+
+            <div class="h-24 my-2">
+              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
+                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
+                Hamas?
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-x-2 text-sm">
+              <a
+                href="#"
+                class="font-medium text-primary"
+                >Marketing</a
+              >
+              <h1>&#x2022;</h1>
+              <time datetime="2020-03-16" class="text-gray-500"
+                >16 Maret 2020</time
+              >
+            </div>
+          </article>
+          
+          
+
+          <!-- More posts... -->
+        </div>
+      </div>
+    </section>
+    <!-- news list end-->
+
+    <!-- Carousel start -->
+     
+    <!-- Carousel end -->
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
