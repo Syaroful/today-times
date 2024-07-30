@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Today Times" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Syaroful/portfolio-tailwind-css/main/dist/image/portfolio/Fitmeal.png"
+    />
+    <meta
+      property="og:description"
+      content="Website penyedia berita paling update"
+    />
+    <meta property="og:url" content="URL OF YOUR WEBSITE" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
     <link href="src/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Today Times</title>
   </head>
   <body>
@@ -28,7 +44,7 @@
                   stroke-width="7"
                 />
               </svg>
-              <span class="font-bold text-lg text-dark ml-4">Today Times</span>
+              <span class="font-bold text-lg text-dark ml-4">TodayTimes</span>
             </a>
           </div>
           <div class="flex items-center px-4">
@@ -63,23 +79,23 @@
                 </li>
                 <li class="group">
                   <a
-                    href="#about"
+                    href="#populer-news"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >About</a
+                    >Berita Populer</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#portfolio"
+                    href="#news-list"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >portfolio</a
+                    >Kumpulan Berita</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#contact"
+                    href="#banner"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Contact</a
+                    >Acara Menarik</a
                   >
                 </li>
               </ul>
@@ -91,92 +107,19 @@
     <!-- header end -->
 
     <!-- hero section start -->
-    <section id="hero" class="pt-20">
+    <section id="home" class="pt-20">
+      <!-- swiper -->
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h2 class="text-md font-bold text-gray">Headline</h2>
-            <h1 class="text-3xl font-medium mt-1 mb-5">
-              Respons PSSI Soal Opsi Pindah dari GBK jika Lolos Babak 3
-              Kualifikasi
-            </h1>
-            <p class="font-normal text-gray mb-3 leading-relaxed">
-              Ketua Badan Tim Nasional (BTN) PSSI Sumardji merespons peluang
-              Timnas Indonesia pindah dari Stadion Utama Gelora Bung Karno (GBK)
-              apabila lolos ke putaran ketiga Kualifikasi Piala Dunia 2026.
-            </p>
-            <div class="flex item-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="20"
-                height="20"
-                x="0"
-                y="0"
-                viewBox="0 0 32 32"
-                style="enable-background: new 0 0 512 512"
-                xml:space="preserve"
-                class=""
-              >
-                <g>
-                  <path
-                    d="M26.79 4.25h-3.52v-.5a1 1 0 0 0-2 0v.5H10.73v-.5a1 1 0 0 0-2 0v.5H5.21A4.22 4.22 0 0 0 1 8.46V26a4.22 4.22 0 0 0 4.21 4.21h21.58A4.22 4.22 0 0 0 31 26V8.46a4.22 4.22 0 0 0-4.21-4.21Zm-21.58 2h3.52v.5a1 1 0 0 0 2 0v-.5h10.54v.5a1 1 0 0 0 2 0v-.5h3.52A2.21 2.21 0 0 1 29 8.46v2.37H3V8.46a2.21 2.21 0 0 1 2.21-2.21Zm21.58 22H5.21A2.21 2.21 0 0 1 3 26V12.83h26V26a2.21 2.21 0 0 1-2.21 2.25Z"
-                    data-name="Layer 2"
-                    fill="#374151"
-                    opacity="1"
-                    data-original="#374151"
-                    class=""
-                  ></path>
-                </g>
-              </svg>
-              <time class="text-sm text-gray ml-2">22 Agustus 2024</time>
-            </div>
-            <div class="flex item-center">
-              <a href="#" class="text-sm font-medium text-primary mr-2"
-                >Baca selengkapnya</a
-              >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="20"
-                height="20"
-                x="0"
-                y="0"
-                viewBox="0 0 512 512"
-                style="enable-background: new 0 0 512 512"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="m404.214 81.857-172.638.001h-.002c-6.924 0-13.434 2.696-18.33 7.593-4.897 4.897-7.594 11.408-7.594 18.333s2.696 13.435 7.594 18.333c4.897 4.896 11.408 7.592 18.332 7.593h110.048L89.452 385.88c-10.108 10.108-10.108 26.557.001 36.666 4.897 4.896 11.407 7.593 18.332 7.593s13.436-2.696 18.332-7.593l252.171-252.172-.001 110.048c0 6.926 2.697 13.437 7.595 18.332 4.896 4.897 11.406 7.595 18.333 7.595 14.295-.001 25.926-11.632 25.926-25.926V107.784c0-14.295-11.631-25.926-25.927-25.927z"
-                    fill="#3b82f6"
-                    opacity="1"
-                    data-original="#000000"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div
-              class="h-96 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
-            >
-              <img
-                src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/ngdjbafv3twathukjbq2"
-                alt="News Thumbnail"
-                class="object-cover object-center"
-              />
-            </div>
-          </div>
+        <div class="swiper mySwiper">
+          <div class="hero-container swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
     <!-- hero section end -->
 
     <!-- Poluper news start -->
-    <section id="populer-news" class="pt-4">
+    <section id="populer-news" class="pt-16">
       <div class="container">
         <div class="flex item-center px-4">
           <span class="vertical-line"></span>
@@ -184,93 +127,9 @@
             Berita Terpopuler
           </h2>
         </div>
-        <div class="w-full flex flex-wrap mx-auto px-6 lg:px-8">
-          <article
-            class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"
-          >
-            <img
-              src="https://a.storyblok.com/f/112937/568x464/82f66c3a21/all_the_english-_football_terms_you_need_to_know_blog-hero-low.jpg/m/620x0/filters:quality(70)/"
-              alt="News Thumbnail"
-              class="h-24 w-32 object-cover object-center rounded-lg mr-2"
-            />
-            <div class="flex justify-between flex-col">
-              <div class="h-16">
-                <h2 class="line-clamp-2 text-sm leading-6 text-gray-600">
-                  Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
-                  Hamas?
-                </h2>
-              </div>
-
-              <div class="flex items-center gap-x-4 text-xs">
-                <a
-                  href="#"
-                  class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300"
-                  >Marketing</a
-                >
-                <time datetime="2020-03-16" class="text-gray-500"
-                  >16 Maret 2020</time
-                >
-              </div>
-            </div>
-          </article>
-          <article
-            class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"
-          >
-            <img
-              src="https://a.storyblok.com/f/112937/568x464/82f66c3a21/all_the_english-_football_terms_you_need_to_know_blog-hero-low.jpg/m/620x0/filters:quality(70)/"
-              alt="News Thumbnail"
-              class="h-24 w-32 object-cover object-center rounded-lg mr-2"
-            />
-            <div class="flex justify-between flex-col">
-              <div class="h-16">
-                <h2 class="line-clamp-2 text-sm leading-6 text-gray-600">
-                  Daftar 6 Lahan Tambang Jatah Ormas Agama, NU Dapat Bekas Grup
-                  Bakrie
-                </h2>
-              </div>
-
-              <div class="flex items-center gap-x-4 text-xs">
-                <a
-                  href="#"
-                  class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300"
-                  >Marketing</a
-                >
-                <time datetime="2020-03-16" class="text-gray-500"
-                  >16 Maret 2020</time
-                >
-              </div>
-            </div>
-          </article>
-          <article
-            class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"
-          >
-            <img
-              src="https://a.storyblok.com/f/112937/568x464/82f66c3a21/all_the_english-_football_terms_you_need_to_know_blog-hero-low.jpg/m/620x0/filters:quality(70)/"
-              alt="News Thumbnail"
-              class="h-24 w-32 object-cover object-center rounded-lg mr-2"
-            />
-            <div class="flex justify-between flex-col">
-              <div class="h-16">
-                <h2 class="line-clamp-2 text-sm leading-6 text-gray-600">
-                  Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
-                  Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
-                  Kementerian BUMN Mulai Uji Coba Pegawai Kerja 4 Hari Sepekan
-                </h2>
-              </div>
-
-              <div class="flex items-center gap-x-4 text-xs">
-                <a
-                  href="#"
-                  class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300"
-                  >Marketing</a
-                >
-                <time datetime="2020-03-16" class="text-gray-500"
-                  >16 Maret 2020</time
-                >
-              </div>
-            </div>
-          </article>
-
+        <div
+          class="newest-container w-full flex flex-wrap mx-auto px-6 lg:px-8"
+        >
           <!-- More posts... -->
         </div>
       </div>
@@ -286,160 +145,370 @@
             Rekomendasi Untuk Anda
           </h2>
         </div>
-        <div class="w-full flex flex-wrap justify-between mx-auto">
-          <article
-            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
-          >
-            <img
-              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
-              alt="News Thumbnail"
-              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
-            />
-
-            <div class="h-24 my-2">
-              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
-                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
-                Hamas?
-              </h2>
-            </div>
-
-            <div class="flex items-center gap-x-2 text-sm">
-              <a
-                href="#"
-                class="font-medium text-primary"
-                >Marketing</a
-              >
-              <h1>&#x2022;</h1>
-              <time datetime="2020-03-16" class="text-gray-500"
-                >16 Maret 2020</time
-              >
-            </div>
-          </article>
-          <article
-            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
-          >
-            <img
-              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
-              alt="News Thumbnail"
-              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
-            />
-
-            <div class="h-24 my-2">
-              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
-                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
-                Hamas?
-              </h2>
-            </div>
-
-            <div class="flex items-center gap-x-2 text-sm">
-              <a
-                href="#"
-                class="font-medium text-primary"
-                >Marketing</a
-              >
-              <h1>&#x2022;</h1>
-              <time datetime="2020-03-16" class="text-gray-500"
-                >16 Maret 2020</time
-              >
-            </div>
-          </article>
-          <article
-            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
-          >
-            <img
-              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
-              alt="News Thumbnail"
-              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
-            />
-
-            <div class="h-24 my-2">
-              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
-                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
-                Hamas?
-              </h2>
-            </div>
-
-            <div class="flex items-center gap-x-2 text-sm">
-              <a
-                href="#"
-                class="font-medium text-primary"
-                >Marketing</a
-              >
-              <h1>&#x2022;</h1>
-              <time datetime="2020-03-16" class="text-gray-500"
-                >16 Maret 2020</time
-              >
-            </div>
-          </article>
-          <article
-            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
-          >
-            <img
-              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
-              alt="News Thumbnail"
-              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
-            />
-
-            <div class="h-24 my-2">
-              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
-                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
-                Hamas?
-              </h2>
-            </div>
-
-            <div class="flex items-center gap-x-2 text-sm">
-              <a
-                href="#"
-                class="font-medium text-primary"
-                >Marketing</a
-              >
-              <h1>&#x2022;</h1>
-              <time datetime="2020-03-16" class="text-gray-500"
-                >16 Maret 2020</time
-              >
-            </div>
-          </article>
-          <article
-            class="flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"
-          >
-            <img
-              src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2024-07/Cam-Rising-Utah.jpg?h=82a14b3c&itok=fjBSGgbE"
-              alt="News Thumbnail"
-              class=" h-40 w-full object-cover object-center rounded-lg mr-2"
-            />
-
-            <div class="h-24 my-2">
-              <h2 class="line-clamp-3 text-xl font-medium leading-6 text-dark">
-                Kenapa Eks Jenderal Israel Kritik Cara IDF Bebaskan 4 Sandera
-                Hamas?
-              </h2>
-            </div>
-
-            <div class="flex items-center gap-x-2 text-sm">
-              <a
-                href="#"
-                class="font-medium text-primary"
-                >Marketing</a
-              >
-              <h1>&#x2022;</h1>
-              <time datetime="2020-03-16" class="text-gray-500"
-                >16 Maret 2020</time
-              >
-            </div>
-          </article>
-          
-          
-
+        <div
+          class="articles-container w-full flex flex-wrap justify-between mx-auto"
+        >
           <!-- More posts... -->
+        </div>
+        <div class="flex items-center justify-center gap-8 pt-16">
+          <button
+            disabled
+            class="relative h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-lg border border-gray-900 text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+          >
+            <span
+              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                ></path>
+              </svg>
+            </span>
+          </button>
+          <p
+            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700"
+          >
+            Page <strong class="text-gray-900">1</strong> of
+            <strong class="text-gray-900">10</strong>
+          </p>
+          <button
+            class="relative h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-lg border border-gray-900 text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+          >
+            <span
+              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                ></path>
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </section>
     <!-- news list end-->
 
     <!-- Carousel start -->
-     
+
+    <section id="banner" class="pt-16">
+      <div class="container">
+        <!-- start banner swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex flex-wrap bg-teal-600 rounded-lg mx-8">
+                <div class="w-full self-center px-4 lg:w-1/2 lg:px-16">
+                  <h1 class="text-3xl text-white font-medium mt-4 mb-5">
+                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                  </h1>
+                  <p class="font-normal text-slate-200 mb-3 leading-relaxed">
+                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                  </p>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2 lg:px-16">
+                  <div
+                    class="h-52 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
+                  >
+                    <img
+                      src="src/images/malang-tour.png"
+                      alt="News Thumbnail"
+                      class="object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap bg-amber-500 rounded-lg mx-8">
+                <div class="w-full self-center px-4 lg:w-1/2 lg:px-16">
+                  <h1 class="text-3xl text-white font-medium mt-4 mb-5">
+                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                  </h1>
+                  <p class="font-normal text-slate-200 mb-3 leading-relaxed">
+                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                  </p>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2 lg:px-16">
+                  <div
+                    class="h-52 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
+                  >
+                    <img
+                      src="src/images/malang-tour.png"
+                      alt="News Thumbnail"
+                      class="object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap bg-cyan-500 rounded-lg mx-8">
+                <div class="w-full self-center px-4 lg:w-1/2 lg:px-16">
+                  <h1 class="text-3xl text-white font-medium mt-4 mb-5">
+                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                  </h1>
+                  <p class="font-normal text-slate-200 mb-3 leading-relaxed">
+                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                  </p>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2 lg:px-16">
+                  <div
+                    class="h-52 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
+                  >
+                    <img
+                      src="src/images/malang-tour.png"
+                      alt="News Thumbnail"
+                      class="object-cover object-center"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
     <!-- Carousel end -->
 
+    <!-- Footer section start -->
+    <footer class="bg-dark pt-16 mt-16 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 89 89"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M45 7H4V25H30V71.5H48V25H85V43H65.5V82H48.5"
+                stroke="#3b82f6"
+                stroke-width="7"
+              />
+            </svg>
+            <h2 class="font-bold text-4xl text-white mb-5">Today Times</h2>
+            <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
+            <p>creativeworks.syarofulanam@gmail.com</p>
+            <p>Jl. Ngamprong Kidul, Banjarejo, Pakis, Kab. Malang</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/2">
+            <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
+            <ul>
+              <li>
+                <a
+                  href="#home"
+                  class="inline-block text-base text-slate-300 hover:text-primary mb-3"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base text-slate-300 hover:text-primary mb-3"
+                  >Berita Populer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="inline-block text-base text-slate-300 hover:text-primary mb-3"
+                  >Kumpulan Berita</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="inline-block text-base text-slate-300 hover:text-primary mb-3"
+                  >Acara Menarik</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-600">
+          <div class="flex items-center justify-center mb-5">
+            <!-- instagram -->
+            <a
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
+              href="https://instagram.com/syrflnm_?igshid=MmIzYWVlNDQ5Yg=="
+              target="_blank"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <!-- instagram end -->
+            <!-- Linkedin -->
+            <a
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
+              href="https://www.linkedin.com/in/muhamad-syaroful-anam-1809a4233/"
+              target="_blank"
+              ><svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                /></svg
+            ></a>
+            <!-- linkedin End -->
+
+            <!-- behance -->
+            <a
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
+              href="#"
+              target="_blank"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Behance</title>
+                <path
+                  d="M0 4.4804V19.243h7.1554c.6613 0 1.3078-.0832 1.9297-.248.6288-.1654 1.1905-.4203 1.6792-.7661.485-.3431.8784-.788 1.1677-1.3369.2862-.542.4294-1.187.4294-1.9354 0-.9232-.219-1.7109-.6675-2.369-.446-.6542-1.1187-1.1139-2.0274-1.3746.6674-.3161 1.1658-.7227 1.506-1.2177.3371-.4967.5058-1.1174.5058-1.8607 0-.6873-.1127-1.2677-.3375-1.7318-.2306-.4709-.552-.8452-.9632-1.1266-.4176-.2808-.912-.4857-1.4912-.6085-.5827-.1261-1.22-.1872-1.9264-.1872zm15.6674.9903v1.4567h5.9844V5.4707zM3.2509 6.9947h3.0407c.2873 0 .5683.0204.8359.0731.2728.0466.508.134.716.2595.2096.1205.3754.293.501.5132.1208.2203.1806.5038.1806.8474 0 .6189-.1811 1.0702-.5551 1.3426-.3778.2775-.8543.4147-1.4304.4147H3.2509zm15.545 1.2564c-.819 0-1.5587.1462-2.2294.436-.6705.2904-1.2463.6875-1.7318 1.1915-.4846.5011-.8535 1.0986-1.12 1.7909-.2612.69-.3942 1.4366-.3942 2.236 0 .8268.1284 1.5891.3835 2.2786.258.6923.6198 1.2822 1.0856 1.781.478.4967 1.046.8784 1.726 1.1497.6806.269 1.4382.4048 2.2803.4048 1.208 0 2.2446-.2771 3.0949-.8326.8599-.5528 1.4902-1.471 1.9058-2.7574h-2.585c-.1.3307-.359.649-.784.9467-.4295.2988-.9417.4492-1.534.4492-.8233 0-1.4588-.2168-1.8985-.6462-.4412-.4294-.7267-1.2289-.7267-2.0742h7.713c.0552-.8291-.0122-1.6218-.2045-2.3797-.1938-.7601-.5033-1.4365-.9393-2.029-.4355-.5931-.9904-1.0667-1.667-1.4165-.6788-.3543-1.4703-.5288-2.3747-.5288zm-.0887 2.217c.7209 0 1.3126.2092 1.6612.5954.3503.389.6065.9432.6766 1.6915h-4.7766c.0136-.2085.058-.4444.1339-.7045.0749-.2668.2039-.5164.3933-.753.1905-.2326.4402-.431.744-.5896.3109-.1608.6986-.2397 1.1676-.2397zM3.251 12.664h3.5334c.6996 0 1.2682.1602 1.6948.4836.4259.328.6405.8685.6405 1.6292 0 .3885-.0632.7094-.1946.9566-.131.2495-.3106.4466-.528.5896-.2172.1491-.4753.2498-.7661.3137-.2862.0639-.5905.092-.9115.092H3.2509z"
+                />
+              </svg>
+            </a>
+            <!-- behance end -->
+          </div>
+          <p class="font-medium text-xs text-slate-300 text-center">
+            © 2024 Today Times. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section start -->
+
     <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 2000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+      fetch("https://api-berita-indonesia.vercel.app/cnn/terbaru/")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          const articles = data.data.posts.slice(0, 5);
+          articles.forEach((post) => {
+            const markup =
+              '<div class="swiper-slide"><div class="flex flex-wrap"><div class="w-full self-center px-4 lg:w-1/2"><h2 class="text-md font-bold text-gray">Headline</h2><h1 class="text-3xl font-medium mt-1 mb-5">' +
+              post.title +
+              '</h1><p class="font-normal text-gray mb-3 leading-relaxed">' +
+              post.description +
+              '</p><div class="flex item-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" eight="20" x="0" y="0" viewBox="0 0 32 32" style="enable-background: new 0 0 512 512" xml:space="preserve"> <g> <path d="M26.79 4.25h-3.52v-.5a1 1 0 0 0-2 0v.5H10.73v-.5a1 1 0 0 0-2 0v.5H5.21A4.22 4.22 0 0 0 1 8.46V26a4.22 4.22 0 0 0 4.21 4.21h21.58A4.22 4.22 0 0 0 31 26V8.46a4.22 4.22 0 0 0-4.21-4.21Zm-21.58 2h3.52v.5a1 1 0 0 0 2 0v-.5h10.54v.5a1 1 0 0 0 2 0v-.5h3.52A2.21 2.21 0 0 1 29 8.46v2.37H3V8.46a2.21 2.21 0 0 1 2.21-2.21Zm21.58 22H5.21A2.21 2.21 0 0 1 3 26V12.83h26V26a2.21 2.21 0 0 1-2.21 2.25Z" data-name="Layer 2" fill="#374151" opacity="1" data-original="#374151" class="" ></path></g></svg> <time class="text-sm text-gray ml-2">' +
+              formatTanggal(post.pubDate) +
+              '</time></div><div class="flex item-center"><a href="' +
+              post.link +
+              '" class="text-sm font-medium text-primary mr-2">Baca selengkapnya</a><svg                      xmlns="http://www.w3.org/2000/svg"                      version="1.1"                      xmlns:xlink="http://www.w3.org/1999/xlink"                      width="20"                      height="20"                      x="0"                      y="0"                      viewBox="0 0 512 512"                      style="enable-background: new 0 0 512 512"                      xml:space="preserve"                    >                      <g>                        <path                          d="m404.214 81.857-172.638.001h-.002c-6.924 0-13.434 2.696-18.33 7.593-4.897 4.897-7.594 11.408-7.594 18.333s2.696 13.435 7.594 18.333c4.897 4.896 11.408 7.592 18.332 7.593h110.048L89.452 385.88c-10.108 10.108-10.108 26.557.001 36.666 4.897 4.896 11.407 7.593 18.332 7.593s13.436-2.696 18.332-7.593l252.171-252.172-.001 110.048c0 6.926 2.697 13.437 7.595 18.332 4.896 4.897 11.406 7.595 18.333 7.595 14.295-.001 25.926-11.632 25.926-25.926V107.784c0-14.295-11.631-25.926-25.927-25.927z"                          fill="#3b82f6"                          opacity="1"                          data-original="#000000"                        ></path>                      </g>                    </svg>                  </div>                </div>                <div class="w-full self-end px-4 lg:w-1/2"> <div class="h-80 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"><img src="' +
+              post.thumbnail +
+              '" alt="News Thumbnail" class="object-cover object-center w-full"/></div></div></div></div>';
+            document
+              .querySelector(".hero-container")
+              .insertAdjacentHTML("beforeend", markup);
+          });
+
+          const newest = data.data.posts.slice(5, 8);
+          newest.forEach((post) => {
+            const str =
+              '<article herf="' +
+              post.link +
+              '" class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"><img src="' +
+              post.thumbnail +
+              '" alt="News Thumbnail" class="h-24 w-32 object-cover object-center rounded-lg mr-2" /><div class="flex justify-between flex-col"> <div class="h-16"><h2 class="line-clamp-2 text-sm font-semibold text-gray-600">' +
+              post.title +
+              '</h2></div><div class="flex items-center gap-x-4 text-xs"><a href="#" class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300" >Terbaru</a><time datetime="2020-03-16" class="text-gray-500">' +
+              formatTanggal(post.pubDate) +
+              "</time></div></div></article>";
+            document
+              .querySelector(".newest-container")
+              .insertAdjacentHTML("beforeend", str);
+          });
+        })
+        .catch((error) => console.error(error));
+
+      var category = "hiburan";
+      var url = "https://api-berita-indonesia.vercel.app/cnn/" + category + "/";
+
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          const articles = data.data.posts.slice(0, 8);
+          articles.forEach((post) => {
+            const markup =
+              '<article class="recomded-item flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"><img src="' +
+              post.thumbnail +
+              '" alt="News Thumbnail" class="recomended-img h-40 w-full object-cover object-center rounded-lg mr-2"/> <div class="h-24 my-2"> <a href="' +
+              post.link +
+              '" target="_blank" class="rekomdened-title line-clamp-3 text-xl font-medium leading-6 text-dark">' +
+              post.title +
+              '</a></div> <div class="flex items-center gap-x-2 text-sm"> <a href="#" class="font-medium text-primary">Terbaru</a> <h1>&#x2022;</h1> <time datetime="2020-03-16" class="recomended-date text-gray-500">' +
+              formatTanggal(post.pubDate) +
+              "</time></div></article>";
+            document
+              .querySelector(".articles-container")
+              .insertAdjacentHTML("beforeend", markup);
+          });
+        })
+        .catch((error) => console.error(error));
+
+      function formatTanggal(isoDate) {
+        const date = new Date(isoDate);
+        const tanggal = date.getDate();
+        const bulan = date.toLocaleString("id-ID", { month: "long" });
+        const tahun = date.getFullYear();
+        return `${tanggal} ${bulan} ${tahun}`;
+      }
+    </script>
   </body>
 </html>
