@@ -6,13 +6,13 @@
     <meta property="og:title" content="Today Times" />
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/Syaroful/portfolio-tailwind-css/main/dist/image/portfolio/Fitmeal.png"
+      content="https://raw.githubusercontent.com/Syaroful/today-times/main/src/images/web-thumbnail.png"
     />
     <meta
       property="og:description"
       content="Website penyedia berita paling update"
     />
-    <meta property="og:url" content="URL OF YOUR WEBSITE" />
+    <meta property="og:url" content="#" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
     <link href="src/css/output.css" rel="stylesheet" />
@@ -81,7 +81,7 @@
                   <a
                     href="#populer-news"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                    >Berita Populer</a
+                    >Berita Terbaru</a
                   >
                 </li>
                 <li class="group">
@@ -124,7 +124,7 @@
         <div class="flex item-center px-4">
           <span class="vertical-line"></span>
           <h2 class="text-lg font-semibold text-dark ml-4 self-center">
-            Berita Terpopuler
+            Berita Terbaru
           </h2>
         </div>
         <div
@@ -145,68 +145,50 @@
             Rekomendasi Untuk Anda
           </h2>
         </div>
+        <div class="flex flex-wrap px-8 gap-x-2 pt-4">
+          <button
+            id="nasional"
+            class="bg-transparent hover:bg-blue-100 text-primary font-semibold py-2 px-4 mt-4 border border-blue-500 rounded-full"
+          >
+            Nasional
+          </button>
+          <button
+            id="internasional"
+            class="bg-transparent hover:bg-blue-100 text-primary font-semibold py-2 px-4 mt-4 border border-blue-500 rounded-full"
+          >
+            Internasional
+          </button>
+          <button
+            id="ekonomi"
+            class="bg-transparent hover:bg-blue-100 text-primary font-semibold py-2 px-4 border mt-4 border-blue-500 rounded-full"
+          >
+            Ekonomi
+          </button>
+          <button
+            id="olahraga"
+            class="bg-transparent hover:bg-blue-100 text-primary font-semibold py-2 px-4 border mt-4 border-blue-500 rounded-full"
+          >
+            Olahraga
+          </button>
+          <button
+            id="teknologi"
+            class="bg-transparent hover:bg-blue-100 text-primary font-semibold py-2 px-4 border mt-4 border-blue-500 rounded-full"
+          >
+            Teknologi
+          </button>
+          <button
+            id="hiburan"
+            class="bg-transparent hover:bg-blue-100 text-primary font-semibold py-2 px-4 border mt-4 border-blue-500 rounded-full"
+          >
+            Hiburan
+          </button>
+        </div>
         <div
           class="articles-container w-full flex flex-wrap justify-between mx-auto"
         >
           <!-- More posts... -->
         </div>
-        <div class="flex items-center justify-center gap-8 pt-16">
-          <button
-            disabled
-            class="relative h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-lg border border-gray-900 text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            <span
-              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                ></path>
-              </svg>
-            </span>
-          </button>
-          <p
-            class="block font-sans text-base antialiased font-normal leading-relaxed text-gray-700"
-          >
-            Page <strong class="text-gray-900">1</strong> of
-            <strong class="text-gray-900">10</strong>
-          </p>
-          <button
-            class="relative h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-lg border border-gray-900 text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            <span
-              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                ></path>
-              </svg>
-            </span>
-          </button>
-        </div>
+        
       </div>
     </section>
     <!-- news list end-->
@@ -245,10 +227,11 @@
               <div class="flex flex-wrap bg-amber-500 rounded-lg mx-8">
                 <div class="w-full self-center px-4 lg:w-1/2 lg:px-16">
                   <h1 class="text-3xl text-white font-medium mt-4 mb-5">
-                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                    Jalan Sehat dan Senam Bersama Warga Kota Malang, Dalam
+                    Rangka HUT RI Ke 79
                   </h1>
                   <p class="font-normal text-slate-200 mb-3 leading-relaxed">
-                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                    Jalan sehat di Kota Malang dalam rangka HUT RI ke 79
                   </p>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2 lg:px-16">
@@ -256,7 +239,7 @@
                     class="h-52 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
                   >
                     <img
-                      src="src/images/malang-tour.png"
+                      src="src/images/jalan-sehat.png"
                       alt="News Thumbnail"
                       class="object-cover object-center"
                     />
@@ -268,10 +251,11 @@
               <div class="flex flex-wrap bg-cyan-500 rounded-lg mx-8">
                 <div class="w-full self-center px-4 lg:w-1/2 lg:px-16">
                   <h1 class="text-3xl text-white font-medium mt-4 mb-5">
-                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                    Festival Malang Summer, Music, Dance, and More!
                   </h1>
                   <p class="font-normal text-slate-200 mb-3 leading-relaxed">
-                    Petualangan Edukatif bersama Malang Mbois City Tour!
+                    Festival musim panas di Kota Malang, menghadirkan musik,
+                    tari, dan banyak lagi!
                   </p>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2 lg:px-16">
@@ -279,7 +263,7 @@
                     class="h-52 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"
                   >
                     <img
-                      src="src/images/malang-tour.png"
+                      src="src/images/festival.png"
                       alt="News Thumbnail"
                       class="object-cover object-center"
                     />
@@ -314,8 +298,8 @@
             </svg>
             <h2 class="font-bold text-4xl text-white mb-5">Today Times</h2>
             <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
-            <p>creativeworks.syarofulanam@gmail.com</p>
-            <p>Jl. Ngamprong Kidul, Banjarejo, Pakis, Kab. Malang</p>
+            <p>support@todaytimes.co.id</p>
+            <p>Jl. Ratu Singa No. 23, Jakarta Tengah</p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/2">
             <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
@@ -357,7 +341,7 @@
             <!-- instagram -->
             <a
               class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
-              href="https://instagram.com/syrflnm_?igshid=MmIzYWVlNDQ5Yg=="
+              href="#"
               target="_blank"
             >
               <svg
@@ -374,10 +358,10 @@
               </svg>
             </a>
             <!-- instagram end -->
-            <!-- Linkedin -->
+            <!-- X -->
             <a
               class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
-              href="https://www.linkedin.com/in/muhamad-syaroful-anam-1809a4233/"
+              href="#"
               target="_blank"
               ><svg
                 role="img"
@@ -386,17 +370,18 @@
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>LinkedIn</title>
+                <title>X</title>
                 <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                /></svg
-            ></a>
-            <!-- linkedin End -->
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                />
+              </svg>
+            </a>
+            <!-- X End -->
 
             <!-- behance -->
             <a
               class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary text-primary hover:bg-secondary hover:text-white transition duration-300 ease-in-out"
-              href="#"
+              href=""
               target="_blank"
             >
               <svg
@@ -406,9 +391,9 @@
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>Behance</title>
+                <title>YouTube</title>
                 <path
-                  d="M0 4.4804V19.243h7.1554c.6613 0 1.3078-.0832 1.9297-.248.6288-.1654 1.1905-.4203 1.6792-.7661.485-.3431.8784-.788 1.1677-1.3369.2862-.542.4294-1.187.4294-1.9354 0-.9232-.219-1.7109-.6675-2.369-.446-.6542-1.1187-1.1139-2.0274-1.3746.6674-.3161 1.1658-.7227 1.506-1.2177.3371-.4967.5058-1.1174.5058-1.8607 0-.6873-.1127-1.2677-.3375-1.7318-.2306-.4709-.552-.8452-.9632-1.1266-.4176-.2808-.912-.4857-1.4912-.6085-.5827-.1261-1.22-.1872-1.9264-.1872zm15.6674.9903v1.4567h5.9844V5.4707zM3.2509 6.9947h3.0407c.2873 0 .5683.0204.8359.0731.2728.0466.508.134.716.2595.2096.1205.3754.293.501.5132.1208.2203.1806.5038.1806.8474 0 .6189-.1811 1.0702-.5551 1.3426-.3778.2775-.8543.4147-1.4304.4147H3.2509zm15.545 1.2564c-.819 0-1.5587.1462-2.2294.436-.6705.2904-1.2463.6875-1.7318 1.1915-.4846.5011-.8535 1.0986-1.12 1.7909-.2612.69-.3942 1.4366-.3942 2.236 0 .8268.1284 1.5891.3835 2.2786.258.6923.6198 1.2822 1.0856 1.781.478.4967 1.046.8784 1.726 1.1497.6806.269 1.4382.4048 2.2803.4048 1.208 0 2.2446-.2771 3.0949-.8326.8599-.5528 1.4902-1.471 1.9058-2.7574h-2.585c-.1.3307-.359.649-.784.9467-.4295.2988-.9417.4492-1.534.4492-.8233 0-1.4588-.2168-1.8985-.6462-.4412-.4294-.7267-1.2289-.7267-2.0742h7.713c.0552-.8291-.0122-1.6218-.2045-2.3797-.1938-.7601-.5033-1.4365-.9393-2.029-.4355-.5931-.9904-1.0667-1.667-1.4165-.6788-.3543-1.4703-.5288-2.3747-.5288zm-.0887 2.217c.7209 0 1.3126.2092 1.6612.5954.3503.389.6065.9432.6766 1.6915h-4.7766c.0136-.2085.058-.4444.1339-.7045.0749-.2668.2039-.5164.3933-.753.1905-.2326.4402-.431.744-.5896.3109-.1608.6986-.2397 1.1676-.2397zM3.251 12.664h3.5334c.6996 0 1.2682.1602 1.6948.4836.4259.328.6405.8685.6405 1.6292 0 .3885-.0632.7094-.1946.9566-.131.2495-.3106.4466-.528.5896-.2172.1491-.4753.2498-.7661.3137-.2862.0639-.5905.092-.9115.092H3.2509z"
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
                 />
               </svg>
             </a>
@@ -434,73 +419,122 @@
           dynamicBullets: true,
         },
       });
-      fetch("https://api-berita-indonesia.vercel.app/cnn/terbaru/")
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          const articles = data.data.posts.slice(0, 5);
-          articles.forEach((post) => {
-            const markup =
-              '<div class="swiper-slide"><div class="flex flex-wrap"><div class="w-full self-center px-4 lg:w-1/2"><h2 class="text-md font-bold text-gray">Headline</h2><h1 class="text-3xl font-medium mt-1 mb-5">' +
-              post.title +
-              '</h1><p class="font-normal text-gray mb-3 leading-relaxed">' +
-              post.description +
-              '</p><div class="flex item-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" eight="20" x="0" y="0" viewBox="0 0 32 32" style="enable-background: new 0 0 512 512" xml:space="preserve"> <g> <path d="M26.79 4.25h-3.52v-.5a1 1 0 0 0-2 0v.5H10.73v-.5a1 1 0 0 0-2 0v.5H5.21A4.22 4.22 0 0 0 1 8.46V26a4.22 4.22 0 0 0 4.21 4.21h21.58A4.22 4.22 0 0 0 31 26V8.46a4.22 4.22 0 0 0-4.21-4.21Zm-21.58 2h3.52v.5a1 1 0 0 0 2 0v-.5h10.54v.5a1 1 0 0 0 2 0v-.5h3.52A2.21 2.21 0 0 1 29 8.46v2.37H3V8.46a2.21 2.21 0 0 1 2.21-2.21Zm21.58 22H5.21A2.21 2.21 0 0 1 3 26V12.83h26V26a2.21 2.21 0 0 1-2.21 2.25Z" data-name="Layer 2" fill="#374151" opacity="1" data-original="#374151" class="" ></path></g></svg> <time class="text-sm text-gray ml-2">' +
-              formatTanggal(post.pubDate) +
-              '</time></div><div class="flex item-center"><a href="' +
-              post.link +
-              '" class="text-sm font-medium text-primary mr-2">Baca selengkapnya</a><svg                      xmlns="http://www.w3.org/2000/svg"                      version="1.1"                      xmlns:xlink="http://www.w3.org/1999/xlink"                      width="20"                      height="20"                      x="0"                      y="0"                      viewBox="0 0 512 512"                      style="enable-background: new 0 0 512 512"                      xml:space="preserve"                    >                      <g>                        <path                          d="m404.214 81.857-172.638.001h-.002c-6.924 0-13.434 2.696-18.33 7.593-4.897 4.897-7.594 11.408-7.594 18.333s2.696 13.435 7.594 18.333c4.897 4.896 11.408 7.592 18.332 7.593h110.048L89.452 385.88c-10.108 10.108-10.108 26.557.001 36.666 4.897 4.896 11.407 7.593 18.332 7.593s13.436-2.696 18.332-7.593l252.171-252.172-.001 110.048c0 6.926 2.697 13.437 7.595 18.332 4.896 4.897 11.406 7.595 18.333 7.595 14.295-.001 25.926-11.632 25.926-25.926V107.784c0-14.295-11.631-25.926-25.927-25.927z"                          fill="#3b82f6"                          opacity="1"                          data-original="#000000"                        ></path>                      </g>                    </svg>                  </div>                </div>                <div class="w-full self-end px-4 lg:w-1/2"> <div class="h-80 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"><img src="' +
-              post.thumbnail +
-              '" alt="News Thumbnail" class="object-cover object-center w-full"/></div></div></div></div>';
-            document
-              .querySelector(".hero-container")
-              .insertAdjacentHTML("beforeend", markup);
-          });
+      function getNewestNews() {
+        fetch("https://api-berita-indonesia.vercel.app/cnn/terbaru/")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            const articles = data.data.posts.slice(0, 5);
+            articles.forEach((post) => {
+              const markup =
+                '<div class="swiper-slide"><div class="flex flex-wrap"><div class="w-full self-center px-4 lg:w-1/2"><h2 class="text-md font-bold text-gray">Headline</h2><h1 class="text-3xl font-medium mt-1 mb-5">' +
+                post.title +
+                '</h1><p class="font-normal text-gray mb-3 leading-relaxed">' +
+                post.description +
+                '</p><div class="flex item-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" eight="20" x="0" y="0" viewBox="0 0 32 32" style="enable-background: new 0 0 512 512" xml:space="preserve"> <g> <path d="M26.79 4.25h-3.52v-.5a1 1 0 0 0-2 0v.5H10.73v-.5a1 1 0 0 0-2 0v.5H5.21A4.22 4.22 0 0 0 1 8.46V26a4.22 4.22 0 0 0 4.21 4.21h21.58A4.22 4.22 0 0 0 31 26V8.46a4.22 4.22 0 0 0-4.21-4.21Zm-21.58 2h3.52v.5a1 1 0 0 0 2 0v-.5h10.54v.5a1 1 0 0 0 2 0v-.5h3.52A2.21 2.21 0 0 1 29 8.46v2.37H3V8.46a2.21 2.21 0 0 1 2.21-2.21Zm21.58 22H5.21A2.21 2.21 0 0 1 3 26V12.83h26V26a2.21 2.21 0 0 1-2.21 2.25Z" data-name="Layer 2" fill="#374151" opacity="1" data-original="#374151" class="" ></path></g></svg> <time class="text-sm text-gray ml-2">' +
+                formatTanggal(post.pubDate) +
+                '</time></div><div class="flex item-center"><a href="' +
+                post.link +
+                '" target="_blank" class="text-sm font-medium text-primary mr-2">Baca selengkapnya</a><svg                      xmlns="http://www.w3.org/2000/svg"                      version="1.1"                      xmlns:xlink="http://www.w3.org/1999/xlink"                      width="20"                      height="20"                      x="0"                      y="0"                      viewBox="0 0 512 512"                      style="enable-background: new 0 0 512 512"                      xml:space="preserve"                    >                      <g>                        <path                          d="m404.214 81.857-172.638.001h-.002c-6.924 0-13.434 2.696-18.33 7.593-4.897 4.897-7.594 11.408-7.594 18.333s2.696 13.435 7.594 18.333c4.897 4.896 11.408 7.592 18.332 7.593h110.048L89.452 385.88c-10.108 10.108-10.108 26.557.001 36.666 4.897 4.896 11.407 7.593 18.332 7.593s13.436-2.696 18.332-7.593l252.171-252.172-.001 110.048c0 6.926 2.697 13.437 7.595 18.332 4.896 4.897 11.406 7.595 18.333 7.595 14.295-.001 25.926-11.632 25.926-25.926V107.784c0-14.295-11.631-25.926-25.927-25.927z"                          fill="#3b82f6"                          opacity="1"                          data-original="#000000"                        ></path>                      </g>                    </svg>                  </div>                </div>                <div class="w-full self-end px-4 lg:w-1/2"> <div class="h-80 w-full overflow-hidden rounded-lg bg-gray-100 mt-8"><img src="' +
+                post.thumbnail +
+                '" alt="News Thumbnail" class="object-cover object-center w-full"/></div></div></div></div>';
+              document
+                .querySelector(".hero-container")
+                .insertAdjacentHTML("beforeend", markup);
+            });
 
-          const newest = data.data.posts.slice(5, 8);
-          newest.forEach((post) => {
-            const str =
-              '<article herf="' +
-              post.link +
-              '" class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"><img src="' +
-              post.thumbnail +
-              '" alt="News Thumbnail" class="h-24 w-32 object-cover object-center rounded-lg mr-2" /><div class="flex justify-between flex-col"> <div class="h-16"><h2 class="line-clamp-2 text-sm font-semibold text-gray-600">' +
-              post.title +
-              '</h2></div><div class="flex items-center gap-x-4 text-xs"><a href="#" class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300" >Terbaru</a><time datetime="2020-03-16" class="text-gray-500">' +
-              formatTanggal(post.pubDate) +
-              "</time></div></div></article>";
-            document
-              .querySelector(".newest-container")
-              .insertAdjacentHTML("beforeend", str);
-          });
-        })
-        .catch((error) => console.error(error));
+            const newest = data.data.posts.slice(5, 8);
+            newest.forEach((post) => {
+              const str =
+                '<article class="flex max-w-xl pr-4 mt-4 items-start justify-between xl:w-1/3"><img src="' +
+                post.thumbnail +
+                '" alt="News Thumbnail" class="h-24 w-32 object-cover object-center rounded-lg mr-2" /><div class="flex justify-between flex-col"> <div class="h-16"><a href="' +
+                post.link +
+                '" target="_blank" class="line-clamp-2 text-sm font-semibold text-gray-600">' +
+                post.title +
+                '</a></div><div class="flex items-center gap-x-4 text-xs"><a href="#" class="relative z-10 rounded-full bg-neutral-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-neutral-300" >Terbaru</a><time datetime="2020-03-16" class="text-gray-500">' +
+                formatTanggal(post.pubDate) +
+                "</time></div></div></article>";
+              document
+                .querySelector(".newest-container")
+                .insertAdjacentHTML("beforeend", str);
+            });
+          })
+          .catch((error) => console.error(error));
+      }
 
-      var category = "hiburan";
-      var url = "https://api-berita-indonesia.vercel.app/cnn/" + category + "/";
+      function getNews(category) {
+        var url =
+          "https://api-berita-indonesia.vercel.app/cnn/" +
+          category.toLowerCase() +
+          "/";
 
-      fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          const articles = data.data.posts.slice(0, 8);
-          articles.forEach((post) => {
-            const markup =
-              '<article class="recomded-item flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"><img src="' +
-              post.thumbnail +
-              '" alt="News Thumbnail" class="recomended-img h-40 w-full object-cover object-center rounded-lg mr-2"/> <div class="h-24 my-2"> <a href="' +
-              post.link +
-              '" target="_blank" class="rekomdened-title line-clamp-3 text-xl font-medium leading-6 text-dark">' +
-              post.title +
-              '</a></div> <div class="flex items-center gap-x-2 text-sm"> <a href="#" class="font-medium text-primary">Terbaru</a> <h1>&#x2022;</h1> <time datetime="2020-03-16" class="recomended-date text-gray-500">' +
-              formatTanggal(post.pubDate) +
-              "</time></div></article>";
-            document
-              .querySelector(".articles-container")
-              .insertAdjacentHTML("beforeend", markup);
-          });
-        })
-        .catch((error) => console.error(error));
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            const articles = data.data.posts.slice(0, 8);
+            articles.forEach((post) => {
+              const markup =
+                '<article class="recomded-item flex flex-col mt-12 items-start justify-between px-8 md:w-1/2 xl:w-1/4"><img src="' +
+                post.thumbnail +
+                '" alt="News Thumbnail" class="recomended-img h-40 w-full object-cover object-center rounded-lg mr-2"/> <div class="h-24 my-2"> <a href="' +
+                post.link +
+                '" target="_blank" class="rekomdened-title line-clamp-3 text-xl font-medium leading-6 text-dark">' +
+                post.title +
+                '</a></div> <div class="flex items-center gap-x-2 text-sm"> <a href="#" class="font-medium text-primary">' +
+                category +
+                '</a> <h1>&#x2022;</h1> <time datetime="2020-03-16" class="recomended-date text-gray-500">' +
+                formatTanggal(post.pubDate) +
+                "</time></div></article>";
+              document
+                .querySelector(".articles-container")
+                .insertAdjacentHTML("beforeend", markup);
+            });
+          })
+          .catch((error) => console.error(error));
+      }
+
+      getNews("Nasional");
+      getNewestNews();
+
+      document
+        .getElementById("nasional")
+        .addEventListener("click", function () {
+          document.querySelector(".articles-container").innerHTML = "";
+          getNews("Nasional");
+        });
+
+      document
+        .getElementById("internasional")
+        .addEventListener("click", function () {
+          document.querySelector(".articles-container").innerHTML = "";
+          getNews("Internasional");
+        });
+
+      document.getElementById("ekonomi").addEventListener("click", function () {
+        document.querySelector(".articles-container").innerHTML = "";
+        getNews("Ekonomi");
+      });
+
+      document
+        .getElementById("olahraga")
+        .addEventListener("click", function () {
+          document.querySelector(".articles-container").innerHTML = "";
+          getNews("Olahraga");
+        });
+
+      document
+        .getElementById("teknologi")
+        .addEventListener("click", function () {
+          document.querySelector(".articles-container").innerHTML = "";
+          getNews("Teknologi");
+        });
+
+      document.getElementById("hiburan").addEventListener("click", function () {
+        document.querySelector(".articles-container").innerHTML = "";
+        getNews("Hiburan");
+      });
 
       function formatTanggal(isoDate) {
         const date = new Date(isoDate);
